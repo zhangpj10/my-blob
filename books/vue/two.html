@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>生命周期 | zhangpj博客</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    
+    <meta name="description" content="技术的沉淀是需要积累的">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="preload" href="/my-blob/assets/css/0.styles.592b487f.css" as="style"><link rel="preload" href="/my-blob/assets/js/app.0565901f.js" as="script"><link rel="preload" href="/my-blob/assets/js/2.f811ef4c.js" as="script"><link rel="preload" href="/my-blob/assets/js/6.b36c27c9.js" as="script"><link rel="prefetch" href="/my-blob/assets/js/10.f000a2b3.js"><link rel="prefetch" href="/my-blob/assets/js/11.889ab98c.js"><link rel="prefetch" href="/my-blob/assets/js/12.1b1efd58.js"><link rel="prefetch" href="/my-blob/assets/js/13.8beab989.js"><link rel="prefetch" href="/my-blob/assets/js/14.293a255a.js"><link rel="prefetch" href="/my-blob/assets/js/3.2e313944.js"><link rel="prefetch" href="/my-blob/assets/js/4.f31ca1cf.js"><link rel="prefetch" href="/my-blob/assets/js/5.69124fdd.js"><link rel="prefetch" href="/my-blob/assets/js/7.15fbf277.js"><link rel="prefetch" href="/my-blob/assets/js/8.4f0db4e3.js"><link rel="prefetch" href="/my-blob/assets/js/9.90d26b50.js">
+    <link rel="stylesheet" href="/my-blob/assets/css/0.styles.592b487f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/my-blob/" class="home-link router-link-active"><!----> <span class="site-name">zhangpj博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/my-blob/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">文档</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/my-blob/books/" class="nav-link router-link-active">
+  技术文档
+</a></li><li class="dropdown-item"><!----> <a href="/my-blob/problem/" class="nav-link">
+  问题文档
+</a></li></ul></div></div><div class="nav-item"><a href="/my-blob/business/" class="nav-link">
+  公司
+</a></div><div class="nav-item"><a href="/my-blob/about/" class="nav-link">
+  关于我
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/my-blob/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">文档</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/my-blob/books/" class="nav-link router-link-active">
+  技术文档
+</a></li><li class="dropdown-item"><!----> <a href="/my-blob/problem/" class="nav-link">
+  问题文档
+</a></li></ul></div></div><div class="nav-item"><a href="/my-blob/business/" class="nav-link">
+  公司
+</a></div><div class="nav-item"><a href="/my-blob/about/" class="nav-link">
+  关于我
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>技术文档</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading open"><span>VUE</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/my-blob/books/vue/one.html" class="sidebar-link">双向绑定原理</a></li><li><a href="/my-blob/books/vue/two.html" aria-current="page" class="active sidebar-link">生命周期</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/my-blob/books/vue/three.html" class="sidebar-link">组件间通信</a></li></ul></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>JS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>CSS</span> <span class="arrow right"></span></p> <!----></section></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="生命周期"><a href="#生命周期" class="header-anchor">#</a> 生命周期</h3> <blockquote><p>vue实例从创建到销毁的过程，就是生命周期，从开始创建、初始化数据、编译模板、挂载dom-&gt;渲染、更新-&gt;渲染、销毁等一系列的过程，称之为vue的生命周期。</p></blockquote> <p>首先我们先看官网上一个组件的生命周期图，如下：</p> <p><img src="/my-blob/assets/img/vue-life.ad530532.png" alt="alt vue生命周期图"></p> <p>从上面的图中，我们可以知道vue生命周期分为8个阶段：</p> <ul><li>beforeCreate</li></ul> <p>创建前，组件实例刚被创建，组件属性计算之前，数据对象data都还是undefined的状态，并未初始化。可以在这加个loading事件</p> <ul><li>created</li></ul> <p>创建后，此刻组件实例已创建完成，属性已经绑定上去了，data数据对象已经存在，但是dom未生成，通过this.$el还不能访问到。可以在这结束loading事件，也适合异步请求。</p> <ul><li>beforMount</li></ul> <p>挂载前，组件实例的$el和data都已经初始化，挂载之前为虚拟的dom节点，实际上data.message未替换。</p> <ul><li>mounted</li></ul> <p>挂载后，组件实例已经挂载完成，data.message成功渲染。一般在这个时期进行ajax交互。</p> <ul><li>beforeUpdate</li></ul> <p>更新前，当data数据变化时（及更新之前调用），会触发beforUpdate方法。可以在该时期进一步更改状态，不会触发附加的重渲染过程。</p> <ul><li>updated</li></ul> <p>更新后，当data数据变化后，会触发updated方法。可以在此时期执行依赖DOM的操作，但不建议在该期间更改状态，因为有可能导致更新无限循环 。</p> <ul><li>beforeDestory</li></ul> <p>销毁前，组件销毁之前调用。</p> <ul><li>destoryed</li></ul> <p>销毁后，组件销毁之后调用，对data的改变不会再触发周期函数，vue实例已解除dom监听和数据绑定，但dom结构依然存在。</p> <h3 id="作用"><a href="#作用" class="header-anchor">#</a> 作用</h3> <p>我们可以通过生命周期中的各个事件钩子，去控制整个vue实例的过程，形成比较好的业务逻辑。</p> <h3 id="页面加载会触发的钩子"><a href="#页面加载会触发的钩子" class="header-anchor">#</a> 页面加载会触发的钩子</h3> <p>分别为创建前/后和挂载前/后</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/my-blob/books/vue/one.html" class="prev">
+        双向绑定原理
+      </a></span> <span class="next"><a href="/my-blob/books/vue/three.html">
+        组件间通信
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/my-blob/assets/js/app.0565901f.js" defer></script><script src="/my-blob/assets/js/2.f811ef4c.js" defer></script><script src="/my-blob/assets/js/6.b36c27c9.js" defer></script>
+  </body>
+</html>
